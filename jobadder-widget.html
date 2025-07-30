@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JobAdder Widget</title>
+</head>
+<body>
+  <div id="ja-jobs-widget"></div>
+
+  <script>
+    var _baseUrl = "//apps.jobadder.com/widgets";
+    var _jaJobsSettings = {
+      key: "AU6_qxochsuytsgutp7f4xsrsbh3yi",
+      jobSearchSettings: {
+        showSearchForm: true,
+        autoSearch: true,
+        searchButtonText: "Search"
+      },
+      jobListSettings: {
+        showSalary: true,
+        includeSalaryText: true,
+        showJobReference: true,
+        alwaysShowPager: true,
+        showPagerSummary: false
+      },
+      jobDetailsSettings: {
+        showClassifications: false,
+        showSalary: true,
+        includeSalaryText: true,
+        showJobReference: true
+      },
+      applicationFormSettings: {
+        useExternalApplicationForm: true
+      }
+    };
+  </script>
+  <script src="//apps.jobadder.com/widgets/v1/jobs.min.js"></script>
+</body>
+</html>
